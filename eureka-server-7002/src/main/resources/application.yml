@@ -9,6 +9,9 @@ security:
 spring:
   application:
     name: eureka-server-7002
+    
+#在默认情况下erureka server也是一个eureka client ,
+#           通过register-with-eureka=false,fetch-registry=false表明当前服务是一个eureka server 
 eureka: 
   client: # 客户端进行Eureka注册的配置
     service-url:
